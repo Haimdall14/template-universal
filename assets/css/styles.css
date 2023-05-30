@@ -268,6 +268,10 @@ img {
   row-gap: 3rem;
 }
 
+.home__data {
+  text-align: center;
+}
+
 .home__subtitle {
   background: var(--third-gradient);
   -webkit-background-clip: text;
@@ -277,7 +281,12 @@ img {
   margin-bottom: .5rem;
 }
 
-.home__title
+.home__title {
+  color: var(--white-color);
+  font-size: var(--bigger-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 1.5rem;
+}
 
 /*=============== BUTTON ===============*/
 
