@@ -238,7 +238,14 @@ img {
 }
 
 /* Change background header */
-.bg-header 37:37
+.bg-header {
+  background-color: var(--body-color);
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
+
+.bg-header :is(.nav__logo, .nav__toggle) {
+  color: var(--title-color);
+}
 
 
 /* Active link */
@@ -289,21 +296,21 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.home_buttons {
+.home__buttons {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
 }
 
-.home_buttons .button {
+.home__buttons .button {
   box-shadow: 0 4px 12px hsla(0, 0%, 0%, .8);
 }
 
-.home_buttons .button__link {
+.home__buttons .button__link {
   color: var(--text-color);
 }
 
-.home_buttons .button__link i {
+.home__buttons .button__link i {
   font-size: 2rem;
 }
 
@@ -387,11 +394,11 @@ img {
   font-weight: var(--font-medium);
 }
 
-/* .button__link {
+.button__link {
   display: flex;
   align-items: center;
   column-gap: .25rem;
-} */
+}
 
 /*=============== POPULAR ===============*/
 
