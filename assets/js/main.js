@@ -20,9 +20,6 @@ if(navClose){
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
@@ -31,6 +28,15 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the bg-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('bg-header') 
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER POPULAR ===============*/
 
