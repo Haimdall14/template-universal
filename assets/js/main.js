@@ -95,9 +95,6 @@ const toggleItem = (item) =>{
     }
 }
 
-
-
-
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
